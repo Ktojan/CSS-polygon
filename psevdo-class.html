@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Псевдоклассы</title>
+  <style>
+   INPUT:focus { 
+    color: crimson; /* Красный цвет текста */
+   }
+   INPUT:active { 
+    color: greenyellow; /* Красный цвет текста */
+   }
+   A:link { 
+    color: navy; /* Цвет непосещенных ссылок */
+   }
+   A:visited { 
+    color: olive; /* Цвет посещенных ссылок */
+   }
+   A:hover { 
+    color: #f00; /* Цвет ссылок при наведении на них курсора мыши */
+   }
+   A:active { 
+    color: #ff0; /* Цвет активных ссылок */
+   }
+
+   P {
+    width: 45%;
+    text-indent: 1em; /* Отступ первой строки */
+   }
+   P:first-child {
+    text-indent: 0; /* Для первого абзаца отступ убираем */
+   }
+
+.c {
+    border: 1px solid #333; /* Рамка */
+    display: inline-block;
+    margin-left: 10%;
+    padding: 45px; /* Поля */
+    text-decoration: none; /* Убираем подчёркивание */
+    color: #000; /* Цвет текста */
+  }
+   .c:hover {
+    box-shadow: 0 0 15px rgba(0,0,0,0.5); /* Тень */
+    background: linear-gradient(to right, #fcfff4, #c4c40f); /* Градиент */
+    color: #a00;
+   }
+
+  </style>
+ </head>
+ <body>
+ <p>Историю эту уже начали забывать, хотя находились горожане, которые 
+    время от времени рассказывали ее вновь прибывшим в город посетителям.</p>
+    
+    <p>Легенда обрастала подробностями и уже совсем не напоминала произошедшее 
+    в действительности событие. И, тем не менее, ни один человек не решался 
+    заикнуться о ней с наступлением темноты.</p>
+
+    <p>Но однажды в город вновь вошел незнакомец. Он хромал на левую ногу.</p> 
+    
+<form action="">
+   <p><input type="text" value="Черный текст"></p>
+   <p><input type="text" value="Черный текст"></p>
+</form>
+  
+<a href="#" class="c">Комментировать</a>
+
+  <p>
+    <a href="#1">Ссылка 1</a> | 
+    <a href="#2">Ссылка 2</a> | 
+    <a href="#3">Ссылка 3</a>
+  </p>
+ </body>
+</html>
